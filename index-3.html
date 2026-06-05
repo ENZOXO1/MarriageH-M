@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="theme-color" content="#ff6b9d">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="يومي">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojZmY4ZmFiIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdHlsZT0ic3RvcC1jb2xvcjojZmY2YjlkIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I2U4NDc3YSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmcyIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I2ZmZjBmNSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNmZmQ2ZTciLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNiIgc3RkRGV2aWF0aW9uPSIxMCIgZmxvb2QtY29sb3I9IiNjMDMwNWEiIGZsb29kLW9wYWNpdHk9IjAuMzUiLz4KICAgIDwvZmlsdGVyPgogICAgPGZpbHRlciBpZD0idGV4dHNoYWRvdyI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIzIiBzdGREZXZpYXRpb249IjQiIGZsb29kLWNvbG9yPSIjYzAzMDVhIiBmbG9vZC1vcGFjaXR5PSIwLjQiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KCiAgPCEtLSBCYWNrZ3JvdW5kIHJvdW5kZWQgc3F1YXJlIC0tPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTE1IiBmaWxsPSJ1cmwoI2JnKSIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiLz4KCiAgPCEtLSBJbm5lciBzb2Z0IGdsb3cgY2lyY2xlIC0tPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjIyMCIgcj0iMTk1IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC4wNyIvPgoKICA8IS0tIERlY29yYXRpdmUgdG9wIGFyYyAtLT4KICA8cGF0aCBkPSJNIDEwMCAxODAgUSAyNTYgNjAgNDEyIDE4MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjI1Ii8+CgogIDwhLS0gU21hbGwgaGVhcnQgdG9wIGNlbnRlciAtLT4KICA8cGF0aCBkPSJNMjU2LDExMCBDMjU2LDExMCAyNDIsOTYgMjMyLDk2IEMyMTgsOTYgMjA4LDEwOCAyMDgsMTIwIEMyMDgsMTQwIDI1NiwxNjUgMjU2LDE2NSBDMjU2LDE2NSAzMDQsMTQwIDMwNCwxMjAgQzMwNCwxMDggMjk0LDk2IDI4MCw5NiBDMjcwLDk2IDI1NiwxMTAgMjU2LDExMCBaIgogICAgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNSIvPgoKICA8IS0tIEggbGV0dGVyIC0tPgogIDx0ZXh0IHg9IjE0OCIgeT0iMzMwIgogICAgZm9udC1mYW1pbHk9Ikdlb3JnaWEsICdUaW1lcyBOZXcgUm9tYW4nLCBzZXJpZiIKICAgIGZvbnQtc2l6ZT0iMjAwIgogICAgZm9udC13ZWlnaHQ9ImJvbGQiCiAgICBmaWxsPSJ3aGl0ZSIKICAgIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICBmaWx0ZXI9InVybCgjdGV4dHNoYWRvdykiPkg8L3RleHQ+CgogIDwhLS0gTSBsZXR0ZXIgLS0+CiAgPHRleHQgeD0iMzY0IiB5PSIzMzAiCiAgICBmb250LWZhbWlseT0iR2VvcmdpYSwgJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmIgogICAgZm9udC1zaXplPSIyMDAiCiAgICBmb250LXdlaWdodD0iYm9sZCIKICAgIGZpbGw9IndoaXRlIgogICAgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgIGZpbHRlcj0idXJsKCN0ZXh0c2hhZG93KSI+TTwvdGV4dD4KCiAgPCEtLSAmIGluIG1pZGRsZSBzbWFsbGVyIC0tPgogIDx0ZXh0IHg9IjI1NiIgeT0iMjk1IgogICAgZm9udC1mYW1pbHk9Ikdlb3JnaWEsICdUaW1lcyBOZXcgUm9tYW4nLCBzZXJpZiIKICAgIGZvbnQtc2l6ZT0iNzUiCiAgICBmb250LXdlaWdodD0ibm9ybWFsIgogICAgZmlsbD0id2hpdGUiCiAgICB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgb3BhY2l0eT0iMC44NSIKICAgIGZpbHRlcj0idXJsKCN0ZXh0c2hhZG93KSI+JmFtcDs8L3RleHQ+CgogIDwhLS0gQm90dG9tIGRlY29yYXRpdmUgbGluZSB3aXRoIGRvdHMgLS0+CiAgPGxpbmUgeDE9IjEzMCIgeTE9IjM3MCIgeDI9IjM4MiIgeTI9IjM3MCIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9IjAuMzUiLz4KICA8Y2lyY2xlIGN4PSIxMzAiIGN5PSIzNzAiIHI9IjQiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjUiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIzNzAiIHI9IjQiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjUiLz4KICA8Y2lyY2xlIGN4PSIzODIiIGN5PSIzNzAiIHI9IjQiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjUiLz4KCiAgPCEtLSBTbWFsbCB0ZXh0IGJlbG93IC0tPgogIDx0ZXh0IHg9IjI1NiIgeT0iNDE1IgogICAgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIgogICAgZm9udC1zaXplPSIzMiIKICAgIGZpbGw9IndoaXRlIgogICAgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgIG9wYWNpdHk9IjAuNiIKICAgIGxldHRlci1zcGFjaW5nPSI2Ij7ZitmI2YXZijwvdGV4dD4KCjwvc3ZnPg==">
+<link rel="manifest" id="pwa-manifest">
+<script id="manifest-script">
+window.addEventListener("DOMContentLoaded", function() {
+  var m = {
+    name: "يومي - متابعة يومك",
+    short_name: "يومي",
+    start_url: ".",
+    display: "standalone",
+    background_color: "#ff6b9d",
+    theme_color: "#ff6b9d",
+    icons: [{ src: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojZmY4ZmFiIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdHlsZT0ic3RvcC1jb2xvcjojZmY2YjlkIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I2U4NDc3YSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmcyIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I2ZmZjBmNSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNmZmQ2ZTciLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNiIgc3RkRGV2aWF0aW9uPSIxMCIgZmxvb2QtY29sb3I9IiNjMDMwNWEiIGZsb29kLW9wYWNpdHk9IjAuMzUiLz4KICAgIDwvZmlsdGVyPgogICAgPGZpbHRlciBpZD0idGV4dHNoYWRvdyI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIzIiBzdGREZXZpYXRpb249IjQiIGZsb29kLWNvbG9yPSIjYzAzMDVhIiBmbG9vZC1vcGFjaXR5PSIwLjQiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KCiAgPCEtLSBCYWNrZ3JvdW5kIHJvdW5kZWQgc3F1YXJlIC0tPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTE1IiBmaWxsPSJ1cmwoI2JnKSIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiLz4KCiAgPCEtLSBJbm5lciBzb2Z0IGdsb3cgY2lyY2xlIC0tPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjIyMCIgcj0iMTk1IiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC4wNyIvPgoKICA8IS0tIERlY29yYXRpdmUgdG9wIGFyYyAtLT4KICA8cGF0aCBkPSJNIDEwMCAxODAgUSAyNTYgNjAgNDEyIDE4MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjI1Ii8+CgogIDwhLS0gU21hbGwgaGVhcnQgdG9wIGNlbnRlciAtLT4KICA8cGF0aCBkPSJNMjU2LDExMCBDMjU2LDExMCAyNDIsOTYgMjMyLDk2IEMyMTgsOTYgMjA4LDEwOCAyMDgsMTIwIEMyMDgsMTQwIDI1NiwxNjUgMjU2LDE2NSBDMjU2LDE2NSAzMDQsMTQwIDMwNCwxMjAgQzMwNCwxMDggMjk0LDk2IDI4MCw5NiBDMjcwLDk2IDI1NiwxMTAgMjU2LDExMCBaIgogICAgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuNSIvPgoKICA8IS0tIEggbGV0dGVyIC0tPgogIDx0ZXh0IHg9IjE0OCIgeT0iMzMwIgogICAgZm9udC1mYW1pbHk9Ikdlb3JnaWEsICdUaW1lcyBOZXcgUm9tYW4nLCBzZXJpZiIKICAgIGZvbnQtc2l6ZT0iMjAwIgogICAgZm9udC13ZWlnaHQ9ImJvbGQiCiAgICBmaWxsPSJ3aGl0ZSIKICAgIHRleHQtYW5jaG9yPSJtaWRkbGUiCiAgICBmaWx0ZXI9InVybCgjdGV4dHNoYWRvdykiPkg8L3RleHQ+CgogIDwhLS0gTSBsZXR0ZXIgLS0+CiAgPHRleHQgeD0iMzY0IiB5PSIzMzAiCiAgICBmb250LWZhbWlseT0iR2VvcmdpYSwgJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmIgogICAgZm9udC1zaXplPSIyMDAiCiAgICBmb250LXdlaWdodD0iYm9sZCIKICAgIGZpbGw9IndoaXRlIgogICAgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgIGZpbHRlcj0idXJsKCN0ZXh0c2hhZG93KSI+TTwvdGV4dD4KCiAgPCEtLSAmIGluIG1pZGRsZSBzbWFsbGVyIC0tPgogIDx0ZXh0IHg9IjI1NiIgeT0iMjk1IgogICAgZm9udC1mYW1pbHk9Ikdlb3JnaWEsICdUaW1lcyBOZXcgUm9tYW4nLCBzZXJpZiIKICAgIGZvbnQtc2l6ZT0iNzUiCiAgICBmb250LXdlaWdodD0ibm9ybWFsIgogICAgZmlsbD0id2hpdGUiCiAgICB0ZXh0LWFuY2hvcj0ibWlkZGxlIgogICAgb3BhY2l0eT0iMC44NSIKICAgIGZpbHRlcj0idXJsKCN0ZXh0c2hhZG93KSI+JmFtcDs8L3RleHQ+CgogIDwhLS0gQm90dG9tIGRlY29yYXRpdmUgbGluZSB3aXRoIGRvdHMgLS0+CiAgPGxpbmUgeDE9IjEzMCIgeTE9IjM3MCIgeDI9IjM4MiIgeTI9IjM3MCIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9IjAuMzUiLz4KICA8Y2lyY2xlIGN4PSIxMzAiIGN5PSIzNzAiIHI9IjQiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjUiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIzNzAiIHI9IjQiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjUiLz4KICA8Y2lyY2xlIGN4PSIzODIiIGN5PSIzNzAiIHI9IjQiIGZpbGw9IndoaXRlIiBvcGFjaXR5PSIwLjUiLz4KCiAgPCEtLSBTbWFsbCB0ZXh0IGJlbG93IC0tPgogIDx0ZXh0IHg9IjI1NiIgeT0iNDE1IgogICAgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIgogICAgZm9udC1zaXplPSIzMiIKICAgIGZpbGw9IndoaXRlIgogICAgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgIG9wYWNpdHk9IjAuNiIKICAgIGxldHRlci1zcGFjaW5nPSI2Ij7ZitmI2YXZijwvdGV4dD4KCjwvc3ZnPg==", sizes: "512x512", type: "image/svg+xml", purpose: "any maskable" }]
+  };
+  var b = new Blob([JSON.stringify(m)], {type:"application/manifest+json"});
+  document.getElementById("pwa-manifest").href = URL.createObjectURL(b);
+});
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>يومي - متابعة يومك</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f2efe9;
+    --surface: #ebe7e0;
+    --card: #faf8f5;
+    --border: #ddd8cf;
+    --gold: #8a6530;
+    --gold-light: #b08840;
+    --green: #4d8c62;
+    --green-dim: #eaf4ee;
+    --text: #3a3530;
+    --text-muted: #9a9188;
+    --accent: #5a90b0;
+    --red: #b06060;
+    --purple: #7a6898;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  *:focus { outline: none; }
+  *:focus-visible { outline: none; }
+  button, .check-card, .counter-btn { -webkit-tap-highlight-color: transparent; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Cairo', sans-serif;
+    min-height: 100vh;
+    padding-bottom: 60px;
+  }
+
+  /* Header */
+  .header {
+    background: #ffffff;
+    border-bottom: 1px solid var(--border);
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 12px rgba(0,0,0,0.04);
+  }
+
+  .header-title {
+    font-family: 'Amiri', serif;
+    font-size: 26px;
+    color: var(--gold);
+    letter-spacing: 1px;
+  }
+
+  .header-date {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-align: left;
+  }
+
+  .date-day {
+    font-size: 14px;
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  /* Streak banner */
+  .streak-banner {
+    background: #ffffff;
+    border: 1px solid #d8eee0;
+    margin: 16px 16px 0;
+    border-radius: 20px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 2px 16px rgba(100,170,120,0.08);
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+
+  .streak-info { flex: 1; }
+  .streak-num {
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .streak-label {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 3px;
+  }
+
+  .streak-dots {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .s-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 7px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    transition: transform 0.2s;
+  }
+
+  .s-dot:hover { transform: scale(1.15); }
+  .s-dot.done-day  { background: #c8e8d0; color: #4a8a60; }
+  .s-dot.missed-day{ background: #f5e0e0; color: #c07878; border: 1px solid #eacccc; }
+  .s-dot.today-day { background: var(--gold); color: #fff; }
+
+  .progress-ring-wrap {
+    position: relative;
+    width: 68px;
+    height: 68px;
+  }
+
+  .progress-ring { transform: rotate(-90deg); }
+  .ring-bg  { fill: none; stroke: var(--border); stroke-width: 5; }
+  .ring-fill {
+    fill: none;
+    stroke: var(--gold);
+    stroke-width: 5;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease;
+  }
+
+  .ring-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gold);
+  }
+
+  .ring-text span { font-size: 10px; color: var(--text-muted); font-weight: 400; }
+
+  /* Sections */
+  .section { margin: 16px 16px 0; }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .section-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .icon-prayer  { background: #deeef8; }
+  .icon-adhkar  { background: #e8e2f5; }
+  .icon-quran   { background: #d8eedd; }
+  .icon-exercise{ background: #fde8e2; }
+  .icon-water   { background: #d8ecf5; }
+  .icon-sleep   { background: #e8e0f5; }
+
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .section-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-right: auto;
+    background: var(--surface);
+    padding: 3px 10px;
+    border-radius: 99px;
+  }
+
+  /* Cards grid */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+  }
+
+  .check-card {
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 16px;
+    padding: 16px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  }
+
+  .check-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--green);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .check-card.done {
+    border-color: #a8d8b8;
+    background: var(--green-dim);
+    box-shadow: 0 1px 6px rgba(100,180,130,0.1);
+  }
+
+  .check-card:hover:not(.done) {
+    border-color: #c8c0b8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+  }
+
+  .check-card:active { transform: scale(0.97); }
+
+  .card-emoji {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 8px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  }
+
+  .card-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  .card-check {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .check-card.done .card-check { opacity: 1; }
+
+  /* Prayer special */
+  .prayer-cards { grid-template-columns: repeat(5, 1fr); gap: 8px; }
+
+  @media (max-width: 500px) {
+    .prayer-cards { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* Counter cards */
+  .counter-card {
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  }
+
+  .counter-icon { font-size: 32px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.08)); }
+
+  .counter-info { flex: 1; }
+  .counter-label { font-size: 14px; font-weight: 600; color: var(--text); }
+  .counter-val   { font-size: 24px; font-weight: 900; color: var(--gold); }
+  .counter-target{ font-size: 11px; color: var(--text-muted); }
+
+  .counter-btns { display: flex; gap: 8px; align-items: center; }
+
+  .counter-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1.5px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+  }
+
+  .counter-btn:hover { background: var(--border); }
+  .counter-btn.plus { border-color: var(--accent); color: var(--accent); }
+  .counter-btn.plus:hover { background: #eaf4fa; }
+
+  .water-dots {
+    display: flex;
+    gap: 5px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+
+  .water-dot {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    background: transparent;
+    transition: all 0.2s;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .water-dot.filled { background: #deeef8; border-color: #a8d0e8; }
+
+  /* Quran tracker */
+  .quran-tracker {
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  }
+
+  .quran-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
+  .quran-label { font-size: 14px; font-weight: 600; color: var(--text); }
+
+  .quran-input-wrap { display: flex; align-items: center; gap: 8px; }
+
+  .quran-input {
+    width: 70px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    font-family: 'Cairo', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 6px;
+  }
+
+  .quran-input:focus { outline: none; border-color: var(--gold); }
+
+  .quran-unit { font-size: 13px; color: var(--text-muted); }
+
+  .quran-progress {
+    height: 8px;
+    background: var(--surface);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+
+  .quran-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #8ac8a0, #6aaa80);
+    border-radius: 99px;
+    transition: width 0.4s ease;
+  }
+
+  /* Marriage card */
+  .marriage-card {
+    background: linear-gradient(135deg, #fff5f7, #fdf0f4);
+    border: 1.5px solid #f0d0da;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(180,100,130,0.07);
+  }
+
+  .marriage-card::before {
+    content: '💕';
+    position: absolute;
+    font-size: 80px;
+    opacity: 0.05;
+    top: -10px;
+    right: -10px;
+  }
+
+  .marriage-title {
+    font-family: 'Amiri', serif;
+    font-size: 18px;
+    color: #b86070;
+    margin-bottom: 16px;
+  }
+
+  .marriage-counters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .m-counter {
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #f0d0da;
+    border-radius: 12px;
+    padding: 10px 14px;
+    min-width: 62px;
+  }
+
+  .m-num {
+    font-size: 26px;
+    font-weight: 900;
+    color: #b86070;
+    line-height: 1;
+  }
+
+  .m-lbl {
+    font-size: 11px;
+    color: #c8a0a8;
+    margin-top: 4px;
+  }
+
+  .marriage-progress {
+    height: 7px;
+    background: #fae0e6;
+    border-radius: 99px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .marriage-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #e8a0b0, #d07888);
+    border-radius: 99px;
+    transition: width 0.6s ease;
+  }
+
+  .marriage-pct { font-size: 12px; color: #c0a0a8; }
+  .marriage-pct span { color: #b86070; font-weight: 700; }
+
+  /* Summary */
+  .summary-bar {
+    margin: 16px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 18px 20px;
+    display: flex;
+    gap: 16px;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+
+  .summary-num { font-size: 22px; font-weight: 900; color: var(--gold); }
+  .summary-lbl { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+  /* Reset button */
+  .reset-btn {
+    display: block;
+    margin: 0 16px;
+    width: calc(100% - 32px);
+    padding: 14px;
+    background: transparent;
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    color: var(--text-muted);
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .reset-btn:hover { border-color: var(--red); color: var(--red); background: #fdf5f5; }
+
+  /* Confetti */
+  .confetti-wrap { position: fixed; inset: 0; pointer-events: none; z-index: 999; }
+
+  .confetti-piece {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: -10px;
+    animation: fall 1.5s ease-in forwards;
+  }
+
+  @keyframes fall {
+    to { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+  }
+
+  /* Toast */
+  .toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--green);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 99px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 1000;
+    white-space: nowrap;
+    box-shadow: 0 4px 16px rgba(100,170,120,0.3);
+  }
+
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  *:focus { outline: none; }
+  *:focus-visible { outline: none; }
+  button, .check-card, .counter-btn { -webkit-tap-highlight-color: transparent; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Cairo', sans-serif;
+    min-height: 100vh;
+    padding-bottom: 40px;
+  }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #f5f2ec 0%, #ede9e2 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+  }
+
+  .header-title {
+    font-family: 'Amiri', serif;
+    font-size: 28px;
+    color: var(--gold);
+    letter-spacing: 1px;
+  }
+
+  .header-date {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-align: left;
+  }
+
+  .date-day {
+    font-size: 15px;
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  /* Streak banner */
+  .streak-banner {
+    background: linear-gradient(135deg, #e8f2ec, #ede9e2);
+    border: 1px solid #bdd4c8;
+    margin: 20px 20px 0;
+    border-radius: 16px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .streak-fire {
+    font-size: 36px;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+
+  .streak-info { flex: 1; }
+  .streak-num {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .streak-label {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+
+  .streak-dots {
+    display: flex;
+    gap: 5px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+
+  .s-dot {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    transition: transform 0.2s;
+  }
+
+  .s-dot:hover { transform: scale(1.2); }
+  .s-dot.done-day { background: var(--green); color: #fff; box-shadow: 0 2px 6px rgba(77,140,98,0.3); }
+  .s-dot.missed-day { background: #f0e0e0; color: var(--red); border: 1px solid #dfc0c0; }
+  .s-dot.today-day { background: var(--gold); color: #fff; border: 2px solid var(--gold-light); box-shadow: 0 2px 8px rgba(138,101,48,0.35); }
+
+  .progress-ring-wrap {
+    position: relative;
+    width: 70px;
+    height: 70px;
+  }
+
+  .progress-ring {
+    transform: rotate(-90deg);
+  }
+
+  .ring-bg { fill: none; stroke: var(--border); stroke-width: 5; }
+  .ring-fill {
+    fill: none;
+    stroke: var(--gold);
+    stroke-width: 5;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease;
+  }
+
+  .ring-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--gold);
+  }
+
+  .ring-text span { font-size: 10px; color: var(--text-muted); font-weight: 400; }
+
+  /* Sections */
+  .section {
+    margin: 20px 20px 0;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .section-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.12));
+  }
+
+  .icon-prayer  { background: linear-gradient(145deg, #c8dff0, #a8c8e0); box-shadow: 0 4px 12px rgba(90,140,180,0.25), inset 0 1px 0 rgba(255,255,255,0.5); }
+  .icon-adhkar  { background: linear-gradient(145deg, #cdc4e8, #b0a4d8); box-shadow: 0 4px 12px rgba(122,104,152,0.25), inset 0 1px 0 rgba(255,255,255,0.5); }
+  .icon-quran   { background: linear-gradient(145deg, #b8d8c4, #96c0a8); box-shadow: 0 4px 12px rgba(77,140,98,0.25), inset 0 1px 0 rgba(255,255,255,0.5); }
+  .icon-exercise{ background: linear-gradient(145deg, #f0c8b8, #e0a898); box-shadow: 0 4px 12px rgba(180,100,80,0.2), inset 0 1px 0 rgba(255,255,255,0.5); }
+  .icon-water   { background: linear-gradient(145deg, #b8d8ed, #94c0dc); box-shadow: 0 4px 12px rgba(60,130,175,0.25), inset 0 1px 0 rgba(255,255,255,0.5); }
+  .icon-sleep   { background: linear-gradient(145deg, #c8bce8, #a89ed4); box-shadow: 0 4px 12px rgba(100,85,155,0.25), inset 0 1px 0 rgba(255,255,255,0.5); }
+
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .section-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-right: auto;
+  }
+
+  /* Cards grid */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+  }
+
+  .check-card {
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .check-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--green);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .check-card.done {
+    border-color: #7ab890;
+    background: #e8f4ed;
+    box-shadow: 0 2px 10px rgba(77,140,98,0.12);
+  }
+
+  .check-card.done::before { opacity: 0.05; }
+
+  .check-card:hover:not(.done) {
+    border-color: var(--text-muted);
+    transform: translateY(-2px);
+  }
+
+  .check-card:active { transform: scale(0.97); }
+
+  .card-emoji {
+    font-size: 26px;
+    display: block;
+    margin-bottom: 6px;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.18));
+  }
+
+  .card-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  .card-time {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 4px;
+  }
+
+  .card-check {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .check-card.done .card-check { opacity: 1; }
+
+  /* Prayer special */
+  .prayer-cards { grid-template-columns: repeat(5, 1fr); gap: 8px; }
+
+  @media (max-width: 500px) {
+    .prayer-cards { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* Counter cards (water/sleep) */
+  .counter-card {
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .counter-icon { font-size: 28px; filter: drop-shadow(0 2px 5px rgba(0,0,0,0.18)); }
+
+  .counter-info { flex: 1; }
+  .counter-label { font-size: 14px; font-weight: 600; }
+  .counter-val { font-size: 22px; font-weight: 900; color: var(--gold); }
+  .counter-target { font-size: 11px; color: var(--text-muted); }
+
+  .counter-btns { display: flex; gap: 8px; align-items: center; }
+
+  .counter-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+  }
+
+  .counter-btn:hover { background: var(--border); }
+  .counter-btn.plus { border-color: var(--accent); color: var(--accent); }
+  .counter-btn.plus:hover { background: rgba(107, 159, 212, 0.15); }
+
+  .water-dots {
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+
+  .water-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    background: transparent;
+    transition: all 0.2s;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .water-dot.filled {
+    background: #7aaec8;
+    border-color: #5a90b0;
+    box-shadow: 0 1px 4px rgba(90,144,176,0.3);
+    font-size: 12px;
+  }
+
+  /* Quran tracker */
+  .quran-tracker {
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .quran-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  .quran-label { font-size: 14px; font-weight: 600; }
+
+  .quran-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .quran-input {
+    width: 70px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: 'Cairo', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 6px;
+  }
+
+  .quran-input:focus { outline: none; border-color: var(--gold); }
+
+  .quran-unit { font-size: 13px; color: var(--text-muted); }
+
+  .quran-progress {
+    height: 8px;
+    background: var(--border);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+
+  .quran-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #3a7050, #4d8c62);
+    border-radius: 99px;
+    transition: width 0.4s ease;
+  }
+
+  /* Daily summary bottom */
+  .summary-bar {
+    margin: 20px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 16px 20px;
+    display: flex;
+    gap: 16px;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+
+  .summary-stat { }
+  .summary-num { font-size: 22px; font-weight: 900; color: var(--gold); }
+  .summary-lbl { font-size: 12px; color: var(--text-muted); }
+
+  /* Marriage card */
+  .marriage-card {
+    background: linear-gradient(135deg, #f5eaee, #efe4e8, #ede8e2);
+    border: 1.5px solid #d8b8c4;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 14px rgba(160,80,110,0.1);
+  }
+
+  .marriage-card::before {
+    content: '💕';
+    position: absolute;
+    font-size: 80px;
+    opacity: 0.04;
+    top: -10px;
+    right: -10px;
+  }
+
+  .marriage-title {
+    font-family: 'Amiri', serif;
+    font-size: 18px;
+    color: #9a4e62;
+    margin-bottom: 16px;
+  }
+
+  .marriage-counters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .m-counter {
+    background: rgba(255,255,255,0.6);
+    border: 1px solid #d4b0be;
+    border-radius: 12px;
+    padding: 10px 14px;
+    min-width: 64px;
+  }
+
+  .m-num {
+    font-size: 28px;
+    font-weight: 900;
+    color: #9a4e62;
+    line-height: 1;
+  }
+
+  .m-lbl {
+    font-size: 11px;
+    color: #a88090;
+    margin-top: 4px;
+  }
+
+  .marriage-progress {
+    height: 6px;
+    background: #e8d0d8;
+    border-radius: 99px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .marriage-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #b87890, #d09aac);
+    border-radius: 99px;
+    transition: width 0.6s ease;
+  }
+
+  .marriage-pct {
+    font-size: 12px;
+    color: #a08090;
+  }
+
+  .marriage-pct span { color: #9a4e62; font-weight: 700; }
+  .reset-btn {
+    display: block;
+    margin: 0 20px;
+    width: calc(100% - 40px);
+    padding: 14px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text-muted);
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .reset-btn:hover { border-color: var(--red); color: var(--red); }
+
+  /* Confetti */
+  .confetti-wrap {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  .confetti-piece {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: -10px;
+    animation: fall 1.5s ease-in forwards;
+  }
+
+  @keyframes fall {
+    to { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+  }
+
+  /* Toast */
+  .toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--green);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 99px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 1000;
+    white-space: nowrap;
+  }
+
+  .toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div>
+    <div class="header-title">يومي 🌙</div>
+  </div>
+  <div class="header-date">
+    <div class="date-day" id="dayName"></div>
+    <div id="dateStr"></div>
+  </div>
+</header>
+
+<!-- Streak -->
+<div class="streak-banner" id="streakBanner">
+  <div class="streak-fire">🔥</div>
+  <div class="streak-info">
+    <div class="streak-num" id="streakNum">0</div>
+    <div class="streak-label">يوم متتالي — استمر!</div>
+  </div>
+  <div class="progress-ring-wrap">
+    <svg class="progress-ring" width="70" height="70" viewBox="0 0 70 70">
+      <circle class="ring-bg" cx="35" cy="35" r="30"/>
+      <circle class="ring-fill" id="ringFill" cx="35" cy="35" r="30"
+        stroke-dasharray="188.5" stroke-dashoffset="188.5"/>
+    </svg>
+    <div class="ring-text">
+      <div id="ringPct">0%</div>
+      <span>اليوم</span>
+    </div>
+  </div>
+</div>
+
+<!-- الصلوات -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-prayer">🕌</div>
+    <div class="section-title">الصلوات</div>
+    <div class="section-sub" id="prayerCount">0 / 5</div>
+  </div>
+  <div class="cards-grid prayer-cards" id="prayerGrid"></div>
+</div>
+
+<!-- الأذكار -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-adhkar">📿</div>
+    <div class="section-title">الأذكار</div>
+    <div class="section-sub" id="adhkarCount">0 / 4</div>
+  </div>
+  <div class="cards-grid" id="adhkarGrid"></div>
+</div>
+
+<!-- القرآن -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-quran">📖</div>
+    <div class="section-title">القرآن الكريم</div>
+  </div>
+  <div class="quran-tracker">
+    <div class="quran-row">
+      <div class="quran-label">صفحات اليوم</div>
+      <div class="quran-input-wrap">
+        <input class="quran-input" type="number" id="quranPages" min="0" max="604" value="0">
+        <div class="quran-unit">صفحة</div>
+      </div>
+    </div>
+    <div class="quran-row">
+      <div class="quran-label">الهدف اليومي</div>
+      <div class="quran-input-wrap">
+        <input class="quran-input" type="number" id="quranTarget" min="1" max="100" value="5">
+        <div class="quran-unit">صفحة</div>
+      </div>
+    </div>
+    <div class="quran-progress">
+      <div class="quran-bar" id="quranBar" style="width:0%"></div>
+    </div>
+  </div>
+</div>
+
+<!-- التمارين -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-exercise">💪</div>
+    <div class="section-title">التمارين</div>
+    <div class="section-sub" id="exerciseCount">0 / 4</div>
+  </div>
+  <div class="cards-grid" id="exerciseGrid"></div>
+</div>
+
+<!-- الماء -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-water">💧</div>
+    <div class="section-title">شرب الماء</div>
+    <div class="section-sub" id="waterCount">0 / 8</div>
+  </div>
+  <div class="counter-card">
+    <div class="counter-icon">💧</div>
+    <div class="counter-info">
+      <div class="counter-label">أكواب اليوم</div>
+      <div><span class="counter-val" id="waterVal">0</span> <span class="counter-target">/ 8 كوب</span></div>
+      <div class="water-dots" id="waterDots"></div>
+    </div>
+    <div class="counter-btns">
+      <button class="counter-btn" onclick="changeWater(-1)">−</button>
+      <button class="counter-btn plus" onclick="changeWater(1)">+</button>
+    </div>
+  </div>
+</div>
+
+<!-- النوم -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon icon-sleep">🌙</div>
+    <div class="section-title">ساعات النوم</div>
+  </div>
+  <div class="counter-card">
+    <div class="counter-icon">😴</div>
+    <div class="counter-info">
+      <div class="counter-label">نمت الليلة</div>
+      <div><span class="counter-val" id="sleepVal">0</span> <span class="counter-target">ساعة / الهدف 8</span></div>
+    </div>
+    <div class="counter-btns">
+      <button class="counter-btn" onclick="changeSleep(-0.5)">−</button>
+      <button class="counter-btn plus" onclick="changeSleep(0.5)">+</button>
+    </div>
+  </div>
+</div>
+
+<!-- الزواج -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon" style="background:linear-gradient(145deg,#7a3050,#5a2040);box-shadow:0 4px 12px rgba(100,40,70,0.3),inset 0 1px 0 rgba(255,255,255,0.15)">💍</div>
+    <div class="section-title">الزواج من حبيبة</div>
+  </div>
+  <div class="marriage-card" id="marriageCard"></div>
+</div>
+
+<!-- الملخص -->
+<div class="summary-bar">
+  <div class="summary-stat">
+    <div class="summary-num" id="sumDone">0</div>
+    <div class="summary-lbl">مكتمل ✅</div>
+  </div>
+  <div class="summary-stat">
+    <div class="summary-num" id="sumTotal">0</div>
+    <div class="summary-lbl">إجمالي</div>
+  </div>
+  <div class="summary-stat">
+    <div class="summary-num" id="sumPct">0%</div>
+    <div class="summary-lbl">نسبة الإنجاز</div>
+  </div>
+</div>
+
+<button class="reset-btn" onclick="resetDay()">🔄 تصفير اليوم</button>
+
+<div class="confetti-wrap" id="confetti"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const DAYS = ['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
+const MONTHS = ['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+
+const prayers = [
+  {id:'fajr', name:'الفجر', emoji:'🌅'},
+  {id:'dhuhr', name:'الظهر', emoji:'☀️'},
+  {id:'asr', name:'العصر', emoji:'🌤️'},
+  {id:'maghrib', name:'المغرب', emoji:'🌇'},
+  {id:'isha', name:'العشاء', emoji:'🌙'},
+];
+
+const adhkar = [
+  {id:'morning', name:'أذكار الصباح', emoji:'🌄'},
+  {id:'evening', name:'أذكار المساء', emoji:'🌆'},
+  {id:'sleep', name:'أذكار النوم', emoji:'💤'},
+  {id:'istighfar', name:'الاستغفار', emoji:'📿'},
+];
+
+const exercises = [
+  {id:'cardio', name:'كارديو', emoji:'🏃'},
+  {id:'stretch', name:'إطالة', emoji:'🧘'},
+  {id:'strength', name:'أوزان', emoji:'🏋️'},
+  {id:'walk', name:'مشي', emoji:'👟'},
+];
+
+let state = loadState();
+
+function getTodayKey() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+function getYesterdayKey() {
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+function loadState() {
+  const today = getTodayKey();
+  const raw = localStorage.getItem('yawmy_v3');
+  const saved = raw ? JSON.parse(raw) : {};
+
+  // history: { "2025-06-01": true/false, ... }
+  const history = saved.history || {};
+
+  if (saved.date && saved.date !== today) {
+    // Day changed — archive yesterday's result before resetting
+    const totalItems = prayers.length + adhkar.length + exercises.length;
+    const doneCnt = Object.values(saved.checks || {}).filter(Boolean).length;
+    const wasAllDone = doneCnt >= totalItems; // water optional for streak
+    history[saved.date] = wasAllDone;
+
+    // Recalculate streak from history
+    const streak = calcStreak(history, today);
+    const quranTarget = saved.quranTarget || 5;
+    return { date: today, checks: {}, water: 0, sleep: 0, quranPages: 0, quranTarget, streak, history };
+  }
+
+  // Same day, restore
+  const streak = saved.streak || calcStreak(history, today);
+  return { ...saved, checks: saved.checks || {}, streak, history };
+}
+
+function calcStreak(history, todayKey) {
+  let streak = 0;
+  const d = new Date();
+  d.setDate(d.getDate() - 1); // start from yesterday
+  while (true) {
+    const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    if (history[key] === true) {
+      streak++;
+      d.setDate(d.getDate() - 1);
+    } else {
+      break;
+    }
+  }
+  return streak;
+}
+
+function saveState() {
+  if (!state.checks) state.checks = {};
+  const totalItems = prayers.length + adhkar.length + exercises.length;
+  const doneCnt = Object.values(state.checks).filter(Boolean).length;
+  state.allDone = doneCnt >= totalItems;
+  localStorage.setItem('yawmy_v3', JSON.stringify(state));
+}
+
+// Auto-reset check every minute
+setInterval(() => {
+  const today = getTodayKey();
+  if (state.date !== today) {
+    state = loadState();
+    render();
+    showToast('🌅 يوم جديد! صفحة جديدة 🤍');
+  }
+}, 60000);
+
+function renderMarriage() {
+  const start = new Date(2026, 5, 3, 0, 0, 0);  // يونيو = 5 (0-indexed)
+  const end   = new Date(2027, 5, 3, 0, 0, 0);
+  const now   = new Date();
+
+  const totalMs  = end - start;
+  const passedMs = Math.max(0, now - start);
+  const leftMs   = Math.max(0, end - now);
+
+  const pct = Math.min(100, (passedMs / totalMs) * 100);
+
+  const dPassed = Math.floor(passedMs / 86400000);
+  const dLeft   = Math.floor(leftMs / 86400000);
+  const hLeft   = Math.floor((leftMs % 86400000) / 3600000);
+  const mLeft   = Math.floor((leftMs % 3600000) / 60000);
+  const sLeft   = Math.floor((leftMs % 60000) / 1000);
+
+  const card = document.getElementById('marriageCard');
+
+  if (now >= end) {
+    card.innerHTML = `
+      <div class="marriage-title">🎉 الوقت جه! روح اتقدم!</div>
+      <div style="font-size:48px;margin:12px 0">💍</div>
+      <div style="color:#e8a0b8;font-size:14px">بارك الله لكم وبارك عليكم</div>
+    `;
+    return;
+  }
+
+  if (now < start) {
+    const msToStart = start - now;
+    const dToStart = Math.ceil(msToStart / 86400000);
+    card.innerHTML = `
+      <div class="marriage-title">العداد بيبدأ بعد ${dToStart} يوم 🗓️</div>
+      <div style="font-size:36px;margin:8px 0">💍</div>
+    `;
+    return;
+  }
+
+  card.innerHTML = `
+    <div class="marriage-title">من يوم الاتفاق لحد يوم التقديم 💍</div>
+    <div class="marriage-counters">
+      <div class="m-counter" style="border-color:#8b2252">
+        <div class="m-num" style="color:#f0a0c0">${dPassed}</div>
+        <div class="m-lbl">يوم عدى</div>
+      </div>
+      <div class="m-counter">
+        <div class="m-num">${dLeft}</div>
+        <div class="m-lbl">يوم فاضل</div>
+      </div>
+      <div class="m-counter">
+        <div class="m-num">${hLeft}</div>
+        <div class="m-lbl">ساعة</div>
+      </div>
+      <div class="m-counter">
+        <div class="m-num">${mLeft}</div>
+        <div class="m-lbl">دقيقة</div>
+      </div>
+      <div class="m-counter">
+        <div class="m-num">${sLeft}</div>
+        <div class="m-lbl">ثانية</div>
+      </div>
+    </div>
+    <div class="marriage-progress">
+      <div class="marriage-bar" style="width:${pct.toFixed(2)}%"></div>
+    </div>
+    <div class="marriage-pct">اتعدى <span>${pct.toFixed(1)}%</span> من الرحلة — فاضل <span>${dLeft}</span> يوم على التقديم 🤍</div>
+  `;
+}
+
+// Update seconds live
+setInterval(() => {
+  renderMarriage();
+}, 1000);
+
+// Init date
+function initDate() {
+  const d = new Date();
+  document.getElementById('dayName').textContent = DAYS[d.getDay()];
+  document.getElementById('dateStr').textContent = `${d.getDate()} ${MONTHS[d.getMonth()]}`;
+}
+
+// Render grids
+function renderGrid(container, items, type) {
+  container.innerHTML = '';
+  items.forEach(item => {
+    const done = !!state.checks[item.id];
+    const card = document.createElement('div');
+    card.className = 'check-card' + (done ? ' done' : '');
+    card.innerHTML = `
+      <div class="card-check">✓</div>
+      <span class="card-emoji">${item.emoji}</span>
+      <div class="card-name">${item.name}</div>
+    `;
+    card.onclick = () => toggle(item.id, type);
+    container.appendChild(card);
+  });
+}
+
+function toggle(id, type) {
+  if (!state.checks) state.checks = {};
+  state.checks[id] = !state.checks[id];
+  saveState();
+  render();
+  if (state.checks[id]) showToast('أحسنت! ✨');
+  checkAllDone();
+}
+
+function render() {
+  if (!state.checks) state.checks = {};
+
+  renderGrid(document.getElementById('prayerGrid'), prayers, 'prayer');
+  renderGrid(document.getElementById('adhkarGrid'), adhkar, 'adhkar');
+  renderGrid(document.getElementById('exerciseGrid'), exercises, 'exercise');
+
+  // Counts — format: مكتمل / الكل
+  const pc = prayers.filter(p => state.checks[p.id]).length;
+  const ac = adhkar.filter(p => state.checks[p.id]).length;
+  const ec = exercises.filter(p => state.checks[p.id]).length;
+  document.getElementById('prayerCount').textContent = `${pc} / ${prayers.length}`;
+  document.getElementById('adhkarCount').textContent = `${ac} / ${adhkar.length}`;
+  document.getElementById('exerciseCount').textContent = `${ec} / ${exercises.length}`;
+
+  // Water
+  const w = state.water || 0;
+  document.getElementById('waterVal').textContent = w;
+  document.getElementById('waterCount').textContent = `${w} / 8`;
+  renderWaterDots(w);
+
+  // Sleep
+  document.getElementById('sleepVal').textContent = state.sleep || 0;
+
+  // Quran
+  const qp = state.quranPages || 0;
+  const qt = state.quranTarget || 5;
+  document.getElementById('quranPages').value = qp;
+  document.getElementById('quranTarget').value = qt;
+  const qpct = Math.min(100, Math.round((qp / qt) * 100));
+  document.getElementById('quranBar').style.width = qpct + '%';
+
+  // Summary
+  const totalItems = prayers.length + adhkar.length + exercises.length;
+  const doneCnt = Object.values(state.checks).filter(Boolean).length;
+  const pct = Math.round((doneCnt / totalItems) * 100);
+  document.getElementById('sumDone').textContent = doneCnt;
+  document.getElementById('sumTotal').textContent = totalItems;
+  document.getElementById('sumPct').textContent = pct + '%';
+
+  renderMarriage();
+
+  // Streak
+  const streak = state.streak || 0;
+  const banner = document.getElementById('streakBanner');
+  const streakEmoji = streak >= 30 ? '🏆' : streak >= 14 ? '⚡' : streak >= 7 ? '🔥' : streak >= 3 ? '✨' : '💫';
+  const streakMsg = streak === 0 ? 'ابدأ اليوم وحقق أول streak!' :
+                    streak < 3  ? 'بداية جميلة — استمر!' :
+                    streak < 7  ? 'أحسنت! لا توقف!' :
+                    streak < 14 ? '🔥 أسبوع كامل!' :
+                    streak < 30 ? '⚡ أنت متميز!' : '🏆 أسطورة!';
+
+  // Build last 14 days dots
+  const history = state.history || {};
+  let dotsHtml = '';
+  for (let i = 13; i >= 0; i--) {
+    const d = new Date();
+    d.setDate(d.getDate() - i);
+    const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    const dayNum = d.getDate();
+    if (i === 0) {
+      dotsHtml += `<div class="s-dot today-day" title="اليوم">${dayNum}</div>`;
+    } else if (history[key] === true) {
+      dotsHtml += `<div class="s-dot done-day" title="${key}">✓</div>`;
+    } else if (history[key] === false) {
+      dotsHtml += `<div class="s-dot missed-day" title="${key}">✗</div>`;
+    } else {
+      dotsHtml += `<div class="s-dot" style="background:var(--border);color:var(--text-muted);font-size:10px" title="${key}">${dayNum}</div>`;
+    }
+  }
+
+  banner.innerHTML = `
+    <div style="font-size:36px;animation:pulse 2s infinite">${streakEmoji}</div>
+    <div class="streak-info" style="flex:1">
+      <div class="streak-num">${streak}</div>
+      <div class="streak-label">${streakMsg}</div>
+      <div class="streak-dots">${dotsHtml}</div>
+    </div>
+    <div class="progress-ring-wrap">
+      <svg class="progress-ring" width="70" height="70" viewBox="0 0 70 70">
+        <circle class="ring-bg" cx="35" cy="35" r="30"/>
+        <circle class="ring-fill" id="ringFill" cx="35" cy="35" r="30"
+          stroke-dasharray="188.5" stroke-dashoffset="${188.5 - (pct/100)*188.5}"/>
+      </svg>
+      <div class="ring-text">
+        <div>${pct}%</div>
+        <span>اليوم</span>
+      </div>
+    </div>
+  `;
+}
+
+function renderWaterDots(count) {
+  const wrap = document.getElementById('waterDots');
+  wrap.innerHTML = '';
+  for (let i = 0; i < 8; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'water-dot' + (i < count ? ' filled' : '');
+    dot.textContent = i < count ? '💧' : '';
+    wrap.appendChild(dot);
+  }
+}
+
+function changeWater(delta) {
+  state.water = Math.max(0, Math.min(8, (state.water || 0) + delta));
+  saveState();
+  render();
+  if (state.water === 8) showToast('🎉 أتممت شرب الماء!');
+}
+
+function changeSleep(delta) {
+  state.sleep = Math.max(0, Math.min(12, (state.sleep || 0) + delta));
+  saveState();
+  render();
+}
+
+function checkAllDone() {
+  if (!state.checks) return;
+  const totalItems = prayers.length + adhkar.length + exercises.length;
+  const doneCnt = Object.values(state.checks).filter(Boolean).length;
+  if (doneCnt === totalItems) {
+    launchConfetti();
+    showToast('🎉 أكملت كل مهامك اليوم! بارك الله فيك');
+  }
+}
+
+function resetDay() {
+  if (!confirm('هتمسح كل بيانات النهارده؟')) return;
+  const history = state.history || {};
+  const streak = state.streak || 0;
+  const quranTarget = state.quranTarget || 5;
+  state = { date: getTodayKey(), checks: {}, water: 0, sleep: 0, quranPages: 0, quranTarget, streak, history };
+  saveState();
+  render();
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+function launchConfetti() {
+  const wrap = document.getElementById('confetti');
+  wrap.innerHTML = '';
+  const colors = ['#d4a843','#3fb950','#58a6ff','#f85149','#a371f7'];
+  for (let i = 0; i < 60; i++) {
+    const p = document.createElement('div');
+    p.className = 'confetti-piece';
+    p.style.left = Math.random() * 100 + 'vw';
+    p.style.background = colors[Math.floor(Math.random() * colors.length)];
+    p.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+    p.style.animationDelay = Math.random() * 0.8 + 's';
+    p.style.animationDuration = (1.2 + Math.random() * 0.8) + 's';
+    p.style.width = (6 + Math.random() * 8) + 'px';
+    p.style.height = (6 + Math.random() * 8) + 'px';
+    wrap.appendChild(p);
+  }
+  setTimeout(() => wrap.innerHTML = '', 3000);
+}
+
+// Quran inputs
+document.getElementById('quranPages').addEventListener('input', e => {
+  state.quranPages = parseInt(e.target.value) || 0;
+  saveState(); render();
+});
+document.getElementById('quranTarget').addEventListener('input', e => {
+  state.quranTarget = parseInt(e.target.value) || 5;
+  saveState(); render();
+});
+
+initDate();
+render();
+</script>
+<script id="sw-script">
+if ("serviceWorker" in navigator) {
+  var sw = [
+    "var C='yawmy-v1';",
+    "self.addEventListener('install',function(e){e.waitUntil(caches.open(C).then(function(c){return c.addAll(['.']);}));self.skipWaiting();});",
+    "self.addEventListener('activate',function(e){e.waitUntil(caches.keys().then(function(ks){return Promise.all(ks.filter(function(k){return k!==C;}).map(function(k){return caches.delete(k);}));}));self.clients.claim();});",
+    "self.addEventListener('fetch',function(e){e.respondWith(caches.match(e.request).then(function(r){return r||fetch(e.request);}));});"
+  ].join("\n");
+  var b = new Blob([sw], {type:"application/javascript"});
+  navigator.serviceWorker.register(URL.createObjectURL(b));
+}
+</script>
+</body>
+</html>
